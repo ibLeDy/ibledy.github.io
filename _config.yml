@@ -1,32 +1,48 @@
 # Site
-repository: sproogen/resume-theme
+repository: ibLeDy/ibledy.github.io
 favicon: images/favicon.ico
 
 # Personal info
-name: Brett Harris
-title: Senior Network System Administrator
-email: brett.h@email.co.uk
-website: www.github.com/sproogen/resume-theme
+name: Iago Alonso
+title: Self-taught Python Developer
+email: deejaynof@gmail.com
+# phone: Your phone number (optional)
+website: https://github.com/ibLeDy/ibledy.github.io
+
+# Dark Mode (true/false/never)
+darkmode: false
 
 # Social links
-twitter_username: facespics
-github_username:  sproogen
+twitter_username: DeejayNof
+github_username:  ibLeDy
+stackoverflow_username: "10817439"
 # dribbble_username: jekyll
 # facebook_username: jekyll
 # flickr_username: jekyll
-instagram_username: chillwildlife
-linkedin_username: jameswgrant
+# instagram_username: chillwildlife
+# linkedin_username: jameswgrant
+# xing_username: jekyll
 # pinterest_username: jekyll
-youtube_username: globalmtb
+# youtube_username: globalmtb
 # googleplus_username: +jekyll
+# orcid_username: 0000-0000-0000-0000
+
+# Additional icon links
+# additional_links:
+# - title: Link name
+#   icon: Font Awesome brand icon name (eg. fa-twitter) (https://fontawesome.com/icons?d=gallery&s=brands&m=free)
+#   url: Link url (eg. https://google.com)
+# - title: another link
+#   icon: font awesome brand icon name (eg. fa-twitter) (https://fontawesome.com/icons?d=gallery&s=brands&m=free)
+#   url: Link url (eg. https://google.com)
 
 # About Section
 # about_title: About Me
 about_profile_image: images/profile.jpg
 about_content: | # this will include new lines to allow paragraphs
-  Hi, my name's Brett and I'm a senior network system administrator. As well as administrating systems I also have experience making software and web apps. I have worked at a number of companies gaining teamwork and leadership skills.
+  Hi, my name's Iago and i'm a self-taught python developer.
 
-  I am most skilled in: <mark>AWS</mark> and <mark>Eating Pizza</mark>
+  I am most skilled in: <mark>Eating Pizza</mark>
 
 # Projects Section
 # projects_title: Projects
@@ -39,12 +55,11 @@ about_content: | # this will include new lines to allow paragraphs
 
 # More Section
 # more_title: A Little More About Me
-more_content: | # this will include new lines to allow paragraphs
-  Alongside my interests in networks and software engineering some of my other interests and hobbies are:
-   - Rock climbing
-   - Gaming
-   - Knitting
-   - [Becoming a ninja](https://www.youtube.com/watch?v=vtg4o__aRMg)
+# more_content: | # this will include new lines to allow paragraphs
+  # Alongside my interests in computers and software engineering some of my other interests and hobbies are:
+  #  - Gaming
+  #  - Biking
+  #  - [Becoming a ninja](https://www.youtube.com/watch?v=vtg4o__aRMg)
 
 # Footer
 footer_show_references: true
@@ -58,3 +73,16 @@ sass:
 
 plugins:
  - jekyll-seo-tag
+
+# exclude : [
+#   "Gemfile",
+#   "Gemfile.lock",
+#   "node_modules",
+#   "vendor/bundle/",
+#   "vendor/cache/",
+#   "vendor/gems/",
+#   "vendor/ruby/",
+#   "lib/",
+#   "scripts/",
+#   "docker-compose.yml",
+#   ]
