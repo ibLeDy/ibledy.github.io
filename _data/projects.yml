@@ -1,7 +1,7 @@
 - layout: top-middle
   name: LBRY Batch Upload
-  link: github.com/ibLeDy
-  github: ibLeDy/lbry-batch-upload
+  link: github.com/ibLeDy/lbry-batch-upload
+  # github: ibLeDy/lbry-batch-upload
   quote: >
     Automate batch uploading to lbry.tv
   description: | # this will include new lines to allow paragraphs
