@@ -1,8 +1,17 @@
 - layout: top-middle
   name: LBRY Batch Upload
-  link: github.com/ibLeDy/lbry-batch-upload
-  # github: ibLeDy/lbry-batch-upload
+  # link: github.com/ibLeDy/lbry-batch-upload
+  github: ibLeDy/lbry-batch-upload
   quote: >
-    Automate batch uploading to lbry.tv
+    Automation script
   description: | # this will include new lines to allow paragraphs
-    Made mostly to practice Selenium, it is designed for music albums, still rough around the edges and neither well thought nor complete.
+    Made mostly to practice [Selenium](https://github.com/SeleniumHQ/selenium), and designed for music albums, it uploads entire folders to the [lbry protocol](https://lbry.com/faq/what-is-lbry). Still rough around the edges and neither well thought nor complete.
+
+- layout: top-middle
+  name: Folder Organizer
+  # link: github.com/ibLeDy/lbry-batch-upload
+  github: ibLeDy/folder-organizer
+  quote: >
+    Organize files in a windows-like folder structure
+  description: | # this will include new lines to allow paragraphs
+    Select the folder you want to organize. Each item that has a known extension is moved to it's corresponding folder.

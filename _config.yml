@@ -4,10 +4,10 @@ favicon: images/favicon.ico
 
 # Personal info
 name: Iago Alonso
-title: Self-taught Python Developer
+title: Python Developer and Computer Tecnician
 email: deejaynof@gmail.com
 # phone: Your phone number (optional)
-# website: github.com/ibLeDy/ibledy.github.io
+# website: iagoalonso.xyz
 
 # Dark Mode (true/false/never)
 darkmode: false
@@ -19,11 +19,11 @@ stackoverflow_username: "10817439"
 # dribbble_username: jekyll
 # facebook_username: jekyll
 # flickr_username: jekyll
-# instagram_username: chillwildlife
+# instagram_username: gitolo
 # linkedin_username: jameswgrant
 # xing_username: jekyll
 # pinterest_username: jekyll
-# youtube_username: globalmtb
+# youtube_username: DeejayNof
 # googleplus_username: +jekyll
 # orcid_username: 0000-0000-0000-0000
 
@@ -37,21 +37,24 @@ stackoverflow_username: "10817439"
 #   url: Link url (eg. https://google.com)
 
 # About Section
-# about_title: About Me
+about_title: About Me
 about_profile_image: images/profile.jpg
 about_content: | # this will include new lines to allow paragraphs
-  Hi, my name's Iago and i'm a self-taught python developer.
+  I've been programming since January 2019, before that i taught myself about music production and video editing (motion graphics and postproduction). <mark>I love learning and improving</mark>.
 
-  I am most skilled in: <mark>Eating Pizza</mark>
+  I started with software pretty early, configuring each program to the maximum, discovering how they worked and testing as many new applications as i could. Since in my family there was always a shortage of devices with which to risk taking apart, hardware had to wait a bit. As soon as i had any opportunity, i disassembled, reassembled and began discovering the world of hardware, learning how computers worked and how to modify, repair and configure almost every part of a modern PC.
+
+  Since i could not get a job in IT due to the lack of academic degrees that supported my knowledge, and that it was the branch that i "lacked" in computing, i decided to invest the necessary time and effort in learning how to code. Without a doubt it was a wise decision. Apart from loving the difficulty and creativity that it entails, the repercussion that it can have both in the world of software and in a lot of other areas is incalculable.
+
 
 # Projects Section
-# projects_title: Projects
+projects_title: Projects
 
 # Experience Section
-# experience_title: Experience
+experience_title: Experience
 
 # Education Section
-# educaton_title: Education
+educaton_title: Education
 
 # More Section
 # more_title: A Little More About Me
@@ -62,7 +65,7 @@ about_content: | # this will include new lines to allow paragraphs
   #  - [Becoming a ninja](https://www.youtube.com/watch?v=vtg4o__aRMg)
 
 # Footer
-footer_show_references: true
+# footer_show_references: true
 
 # Build settings
 remote_theme: sproogen/resume-theme
@@ -73,16 +76,3 @@ sass:
 
 plugins:
  - jekyll-seo-tag
-
-# exclude : [
-#   "Gemfile",
-#   "Gemfile.lock",
-#   "node_modules",
-#   "vendor/bundle/",
-#   "vendor/cache/",
-#   "vendor/gems/",
-#   "vendor/ruby/",
-#   "lib/",
-#   "scripts/",
-#   "docker-compose.yml",
-#   ]
