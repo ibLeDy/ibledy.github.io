@@ -4,7 +4,7 @@ favicon: images/favicon.ico
 
 # Personal info
 name: Iago Alonso
-title: Python Developer and Computer Tecnician
+title: Self-Taught Python Developer and Computer Technician
 email: deejaynof@gmail.com
 # phone: Your phone number (optional)
 # website: iagoalonso.xyz
@@ -19,13 +19,12 @@ stackoverflow_username: "10817439"
 # dribbble_username: jekyll
 # facebook_username: jekyll
 # flickr_username: jekyll
-# instagram_username: gitolo
+# instagram_username: jekyll
 # linkedin_username: jekyll
 # xing_username: jekyll
 # pinterest_username: jekyll
 # youtube_username: DeejayNof
-# googleplus_username: +jekyll
-# orcid_username: 0000-0000-0000-0000
+# orcid_username: 0000-0003-0975-8590
 
 # Additional icon links
 additional_links:
@@ -35,6 +34,12 @@ additional_links:
 - title: Hackerrank link
   icon: fa-hackerrank
   url: https://hackerrank.com/deejaynof
+- title: Keybase link
+  icon: fa-keybase
+  url: https://keybase.io/bledy
+# - title: DEV link
+#   icon: fa-dev
+#   url: https://dev.to/ibledy
 # - title: freeCodeCamp link
 #   icon: fa-free-code-camp
 #   url: https://www.freecodecamp.org/bledy

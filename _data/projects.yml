@@ -1,6 +1,17 @@
 - layout: top-middle
+  name: Timezone Converter
+  # link: github.com/ibLeDy/timezone-converter
+  github: ibLeDy/timezone-converter
+  quote: >
+    Whole-day timezone comparison
+  description: | # this will include new lines to allow paragraphs
+    When working with people that are not in your local timezone, the available resources are the usual webpages that only show one hour at a time, which is pretty inconvenient.
+
+    With this script you can quickly compare a full day of your timezone against a foreign one.
+
+- layout: top-middle
   name: LBRY Batch Upload
-  # link: github.com/ibLeDy/lbry-batch-upload
+  link: open.lbry.com/@bLeDy:e/lbry-batch-upload-demo:b
   github: ibLeDy/lbry-batch-upload
   quote: >
     Automation script
@@ -9,7 +20,7 @@
 
 - layout: top-middle
   name: Folder Organizer
-  # link: github.com/ibLeDy/lbry-batch-upload
+  # link: github.com/ibLeDy/folder-organizer
   github: ibLeDy/folder-organizer
   quote: >
     Organize files in a windows-like folder structure
