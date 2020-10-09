@@ -48,12 +48,24 @@ additional_links:
 about_title: About Me
 about_profile_image: images/profile.jpg
 about_content: | # this will include new lines to allow paragraphs
-  I've been programming since January 2019, before that i taught myself about music production and video editing (motion graphics and postproduction). <mark>I love learning and improving</mark>.
+  I started with software pretty early, configuring each program to the maximum,
+  discovering how they worked and testing as many new applications as I could.
+  Since in my family there was always a shortage of devices with which to risk
+  taking apart, hardware had to wait a bit.
 
-  I started with software pretty early, configuring each program to the maximum, discovering how they worked and testing as many new applications as i could. Since in my family there was always a shortage of devices with which to risk taking apart, hardware had to wait a bit. As soon as i had any opportunity, i disassembled, reassembled and began discovering the world of hardware, learning how computers worked and how to modify, repair and configure almost every part of a modern PC.
+  As soon as i had any opportunity, i disassembled, reassembled and began discovering
+  the world of hardware, learning how computers worked and how to modify,
+  repair and configure almost every part of a modern PC.
 
-  Since i could not get a job in IT due to the lack of academic degrees that supported my knowledge, and that it was the branch that i "lacked" in computing, i decided to invest the necessary time and effort in learning how to code. Without a doubt it was a wise decision. Apart from loving the difficulty and creativity that it entails, the repercussion that it can have both in the world of software and in a lot of other areas is incalculable.
+  I’ve chosen Python as my main programming language because I think it is the most
+  complete tool that enables learning with the least syntactic barrier.
+  That being said, I enjoy learning the latest and greatest technologies and frameworks,
+  although I'm mainly focused on backend.
 
+  I was always passionate about computers and I have a non-common ease of understanding
+  of how they work and it's most complex concepts, enabling me to learn quickly and with
+  high standards. I also taught myself about music production and video editing
+  (motion graphics and video production/postproduction).
 
 # Projects Section
 projects_title: Projects
@@ -65,12 +77,11 @@ experience_title: Experience
 educaton_title: Education
 
 # More Section
-# more_title: A Little More About Me
-# more_content: | # this will include new lines to allow paragraphs
-  # Alongside my interests in computers and software engineering some of my other interests and hobbies are:
-  #  - Gaming
-  #  - Biking
-  #  - [Becoming a ninja](https://www.youtube.com/watch?v=vtg4o__aRMg)
+more_title: A Little More About Me
+more_content: | # this will include new lines to allow paragraphs
+  - I love learning and improving.
+  - I learn quickly and I'm open to every technology/framework/language.
+  - I like to do a lot of research and I'm used to dealing with technical documentation.
 
 # Footer
 # footer_show_references: true
