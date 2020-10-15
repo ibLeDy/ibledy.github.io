@@ -20,7 +20,7 @@ stackoverflow_username: "10817439"
 # facebook_username: jekyll
 # flickr_username: jekyll
 # instagram_username: jekyll
-# linkedin_username: jekyll
+linkedin_username: iago-alonso
 # xing_username: jekyll
 # pinterest_username: jekyll
 # youtube_username: DeejayNof
@@ -34,9 +34,9 @@ additional_links:
 - title: Hackerrank link
   icon: fa-hackerrank
   url: https://hackerrank.com/deejaynof
-- title: Keybase link
-  icon: fa-keybase
-  url: https://keybase.io/bledy
+# - title: Keybase link
+#   icon: fa-keybase
+#   url: https://keybase.io/bledy
 # - title: DEV link
 #   icon: fa-dev
 #   url: https://dev.to/ibledy
