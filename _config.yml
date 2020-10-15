@@ -77,11 +77,26 @@ experience_title: Experience
 educaton_title: Education
 
 # More Section
-more_title: A Little More About Me
+more_title: Skills
 more_content: | # this will include new lines to allow paragraphs
-  - I love learning and improving.
-  - I learn quickly and I'm open to every technology/framework/language.
-  - I like to do a lot of research and I'm used to dealing with technical documentation.
+  - Python
+    - Flask, Django, FastAPI, Gunicorn, SocketIO
+    - Pytest, Selenium, BeautifulSoup, Ansible
+    - PyQt5, PySide2, Tkinter, PyGObject
+    - Nummpy, Pandas, Matplotlib, OpenCV, Pillow, Jupyter Notebooks
+  - SQL
+    - MySQL
+    - PostgreSQL
+    - SQLite
+  - NoSQL
+    - Redis
+    - MongoDB
+    - LevelDB
+  - HTML and CSS
+  - Linux and Windows
+  - Git
+  - Docker
+  - CI/CD pipelines
 
 # Footer
 # footer_show_references: true
