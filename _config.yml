@@ -2,9 +2,12 @@
 repository: ibLeDy/ibledy.github.io
 favicon: images/favicon.ico
 
+# Content configuration version
+version: 2
+
 # Personal info
 name: Iago Alonso
-title: Self-Taught Python Developer and Computer Technician
+title: Software Developer and Computer Technician
 email: deejaynof@gmail.com
 # phone: Your phone number (optional)
 # website: iagoalonso.xyz
@@ -13,7 +16,7 @@ email: deejaynof@gmail.com
 darkmode: false
 
 # Social links
-# twitter_username: DeejayNof
+twitter_username: DeejayNof
 github_username:  ibLeDy
 stackoverflow_username: "10817439"
 # dribbble_username: jekyll
@@ -28,78 +31,131 @@ linkedin_username: iago-alonso
 
 # Additional icon links
 additional_links:
-- title: Gitlab link
-  icon: fa-gitlab
+
+- title: Gitlab
+  icon: fab fa-gitlab
   url: https://gitlab.com/bLeDy
-- title: Hackerrank link
-  icon: fa-hackerrank
+
+- title: Hackerrank
+  icon: fab fa-hackerrank
   url: https://hackerrank.com/deejaynof
-# - title: Keybase link
-#   icon: fa-keybase
-#   url: https://keybase.io/bledy
-# - title: DEV link
-#   icon: fa-dev
-#   url: https://dev.to/ibledy
-# - title: freeCodeCamp link
-#   icon: fa-free-code-camp
-#   url: https://www.freecodecamp.org/bledy
+
+- title: DEV
+  icon: fab fa-dev
+  url: https://dev.to/ibledy
+
+- title: freeCodeCamp
+  icon: fab fa-free-code-camp
+  url: https://www.freecodecamp.org/bledy
+
+- title: Alliantum
+  icon: fas fa-globe
+  url: https://www.alliantum.com
+
+
+# Google Analytics and Tag Manager
+# Using more than one of these may cause issues with reporting
+# gtm: "GTM-0000000"
+# gtag: "UA-00000000-0"
+# google_analytics: "UA-00000000-0"
 
 # About Section
 about_title: About Me
 about_profile_image: images/profile.jpg
 about_content: | # this will include new lines to allow paragraphs
-  I started with software pretty early, configuring each program to the maximum,
-  discovering how they worked and testing as many new applications as I could.
-  Since in my family there was always a shortage of devices with which to risk
-  taking apart, hardware had to wait a bit.
+  I'm a self-taught developer and computer technician. I also taught myself about music production and video editing (motion graphics and video production/postproduction).
 
-  As soon as i had any opportunity, i disassembled, reassembled and began discovering
-  the world of hardware, learning how computers worked and how to modify,
-  repair and configure almost every part of a modern PC.
+  I was always passionate about computers and I think I have a _non-common_ ease of understanding of how they work and it’s most complex concepts, enabling me to learn quickly and with high standards.
 
-  I’ve chosen Python as my main programming language because I think it is the most
-  complete tool that enables learning with the least syntactic barrier.
-  That being said, I enjoy learning the latest and greatest technologies and frameworks,
-  although I'm mainly focused on backend.
+  I began my journey as a software developer using Python as my main language, as it looked like the most complete tool that would allow me to aquire the biggest amount of knowledge with the least syntactic barrier. I enjoy learning new technologies and frameworks, although I’m mainly focused on backend.
 
-  I was always passionate about computers and I have a non-common ease of understanding
-  of how they work and it's most complex concepts, enabling me to learn quickly and with
-  high standards. I also taught myself about music production and video editing
-  (motion graphics and video production/postproduction).
 
-# Projects Section
-projects_title: Projects
+content:
 
-# Experience Section
-experience_title: Experience
+  - title: Projects # Title for the section
+    layout: list # Type of content section (list/text)
+    content:
 
-# Education Section
-educaton_title: Education
+      - layout: left
+        title: Timezone Converter
+        # link: github.com/ibLeDy/timezone-converter
+        # link_text: Project Website
+        additional_links:
+          - title:  ibLeDy/timezone-converter
+            icon: fab fa-github
+            url: github.com/ibLeDy/timezone-converter
+        quote: >
+          Whole-day timezone comparison
+        description: | # this will include new lines to allow paragraphs
+          When working with people that are not in your local timezone, the available resources are the usual webpages that only show one hour at a time. With this script you can quickly compare a full day of your timezone against a foreign one.
 
-# More Section
-more_title: Skills
-more_content: | # this will include new lines to allow paragraphs
-  - Python
-    - Flask, Django, FastAPI, Gunicorn, SocketIO
-    - Pytest, Selenium, BeautifulSoup, Ansible
-    - PyQt5, PySide2, Tkinter, PyGObject
-    - Nummpy, Pandas, Matplotlib, OpenCV, Pillow, Jupyter Notebooks
-  - SQL
-    - MySQL
-    - PostgreSQL
-    - SQLite
-  - NoSQL
-    - Redis
-    - MongoDB
-    - LevelDB
-  - HTML and CSS
-  - Linux and Windows
-  - Git
-  - Docker
-  - CI/CD pipelines
+      - layout: left
+        title: LBRY Batch Upload
+        link: https://open.lbry.com/@bLeDy:e/lbry-batch-upload:0?r=7gFPd2Vzu1GT1k7Fi6JHKaGXCxgxaCFT
+        link_text: Demo video
+        additional_links:
+          - title:  ibLeDy/lbry-batch-upload
+            icon: fab fa-github
+            url: https://github.com/ibLeDy/lbry-batch-upload
+        quote: >
+          Automate uploading entire music albums to the LBRY network
+        description: | # this will include new lines to allow paragraphs
+          Made mostly to practice [Selenium](https://github.com/SeleniumHQ/selenium), and designed for music albums, it uploads entire folders to the [LBRY protocol](https://lbry.com/faq/what-is-lbry). Still rough around the edges and neither well thought nor complete.
+
+      - layout: left
+        title: Folder Organizer
+        # link: github.com/ibLeDy/folder-organizer
+        # link_text: Project Website
+        additional_links:
+          - title:  ibLeDy/folder-organizer
+            icon: fab fa-github
+            url: github.com/ibLeDy/folder-organizer
+        quote: >
+          Organize files in a windows-like folder structure
+        description: | # this will include new lines to allow paragraphs
+          Move all the files that match set extensions to a windows-like folder structure.
+
+  - title: Experience # Title for the section
+    layout: list # Type of content section (list/text)
+    content:
+      - layout: left
+        title: Open Solutions GmbH
+        link: https://www.opensolutions.net
+        link_text: opensolutions.net
+        sub_title: Software Developer
+        caption: December 2020 - Present
+        quote: >
+          I was thrilled to join the small but talented group of developers in charge of the Odoo services.
+        description: | # this will include new lines to allow paragraphs
+          We analyse the needs of your company and together we develop requirements and goals. You will receive a customised, fully functional ERP system.
+
+  # - title: Education # Title for the section
+  #   layout: list # Type of content section (list/text)
+  #   content:
+  #     - layout: left
+  #       title: Harvard University
+  #       caption: 20xx - 20xx
+  #       sub_title: BSc Computer Science
+  #       quote: >
+  #         Established in 1636, Harvard is the oldest higher education institution in the United States, and is widely regarded in terms of its influence, reputation, and academic pedigree as a leading university in not just the US but also the world.
+  #       description: | # this will include new lines to allow paragraphs
+  #         During my time at Harvard I learnt most of my key skills that have I have taken through my career such as teamwork and working to tight deadlines. I thouroughly enjoyed my time as university and learnt a lot about a healthy work life balance.
+
+  - title: Skills
+    layout: text
+    content: | # this will include new lines to allow paragraphs
+      - Python
+      - JS (basic)
+      - SQL & NoSQL
+      - HTML and CSS
+      - Linux, Windows and MacOS
+      - Git, GitHub and GitLab
+      - CI/CD pipelines
+      - Docker
 
 # Footer
-# footer_show_references: true
+footer_show_references: false
+# references_title: References on request (Override references text)
 
 # Build settings
 remote_theme: sproogen/resume-theme
