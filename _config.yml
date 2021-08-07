@@ -7,7 +7,7 @@ version: 2
 
 # Personal info
 name: Iago Alonso
-title: Software Developer and Computer Technician
+title: System Administrator and Software Developer
 email: deejaynof@gmail.com
 # phone: Your phone number (optional)
 # website: iagoalonso.xyz
@@ -114,13 +114,23 @@ content:
     layout: list # Type of content section (list/text)
     content:
       - layout: left
-        title: Open Solutions GmbH
-        link: https://www.opensolutions.net
-        link_text: opensolutions.net
-        sub_title: Software Developer
-        caption: December 2020 - Present
+        title: Alliantum GmbH
+        link: https://www.alliantum.com
+        link_text: www.alliantum.com
+        sub_title: System Administrator
+        caption: July 2021 - Present
         quote: >
-          I was thrilled to join the small but talented group of developers in charge of the Odoo services.
+          Thanks to my employer I could turn my passion into a full time job.
+        description: | # this will include new lines to allow paragraphs
+          Fast, reliable and scalable services, delivered with care and passion.
+      - layout: left
+        title: Alliantum GmbH
+        link: https://www.alliantum.com
+        link_text: www.alliantum.com
+        sub_title: Software Developer
+        caption: December 2020 - June 2021
+        quote: >
+          Thrilled to join the small but talented group of developers in charge of the Odoo services.
         description: | # this will include new lines to allow paragraphs
           We analyse the needs of your company and together we develop requirements and goals. You will receive a customised, fully functional ERP system.
 
