@@ -17,7 +17,7 @@ darkmode: false
 
 # Social links
 twitter_username: DeejayNof
-github_username:  ibLeDy
+github_username: ibLeDy
 stackoverflow_username: "10817439"
 # dribbble_username: jekyll
 # facebook_username: jekyll
@@ -31,27 +31,25 @@ linkedin_username: iago-alonso
 
 # Additional icon links
 additional_links:
+  - title: Gitlab
+    icon: fab fa-gitlab
+    url: https://gitlab.com/bLeDy
 
-- title: Gitlab
-  icon: fab fa-gitlab
-  url: https://gitlab.com/bLeDy
+  - title: Hackerrank
+    icon: fab fa-hackerrank
+    url: https://hackerrank.com/deejaynof
 
-- title: Hackerrank
-  icon: fab fa-hackerrank
-  url: https://hackerrank.com/deejaynof
+  - title: DEV
+    icon: fab fa-dev
+    url: https://dev.to/ibledy
 
-- title: DEV
-  icon: fab fa-dev
-  url: https://dev.to/ibledy
+  - title: freeCodeCamp
+    icon: fab fa-free-code-camp
+    url: https://www.freecodecamp.org/bledy
 
-- title: freeCodeCamp
-  icon: fab fa-free-code-camp
-  url: https://www.freecodecamp.org/bledy
-
-- title: Alliantum
-  icon: fas fa-globe
-  url: https://www.alliantum.com
-
+  - title: Alliantum
+    icon: fas fa-globe
+    url: https://www.alliantum.com
 
 # Google Analytics and Tag Manager
 # Using more than one of these may cause issues with reporting
@@ -69,19 +67,16 @@ about_content: | # this will include new lines to allow paragraphs
 
   I began my journey as a software developer using Python as my main language, as it looked like the most complete tool that would allow me to aquire the biggest amount of knowledge with the least syntactic barrier. I enjoy learning new technologies and frameworks, although I’m mainly focused on backend.
 
-
 content:
-
   - title: Projects # Title for the section
     layout: list # Type of content section (list/text)
     content:
-
       - layout: left
         title: Timezone Converter
         # link: github.com/ibLeDy/timezone-converter
         # link_text: Project Website
         additional_links:
-          - title:  ibLeDy/timezone-converter
+          - title: ibLeDy/timezone-converter
             icon: fab fa-github
             url: github.com/ibLeDy/timezone-converter
         quote: >
@@ -94,7 +89,7 @@ content:
         link: https://open.lbry.com/@bLeDy:e/lbry-batch-upload:0?r=7gFPd2Vzu1GT1k7Fi6JHKaGXCxgxaCFT
         link_text: Demo video
         additional_links:
-          - title:  ibLeDy/lbry-batch-upload
+          - title: ibLeDy/lbry-batch-upload
             icon: fab fa-github
             url: https://github.com/ibLeDy/lbry-batch-upload
         quote: >
@@ -107,7 +102,7 @@ content:
         # link: github.com/ibLeDy/folder-organizer
         # link_text: Project Website
         additional_links:
-          - title:  ibLeDy/folder-organizer
+          - title: ibLeDy/folder-organizer
             icon: fab fa-github
             url: github.com/ibLeDy/folder-organizer
         quote: >
@@ -165,4 +160,4 @@ sass:
   style: compressed
 
 plugins:
- - jekyll-seo-tag
+  - jekyll-seo-tag
