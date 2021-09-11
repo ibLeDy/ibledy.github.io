@@ -68,6 +68,30 @@ about_content: | # this will include new lines to allow paragraphs
   I began my journey as a software developer using Python as my main language, as it looked like the most complete tool that would allow me to aquire the biggest amount of knowledge with the least syntactic barrier. I enjoy learning new technologies and frameworks, although I’m mainly focused on backend.
 
 content:
+  - title: Experience # Title for the section
+    layout: list # Type of content section (list/text)
+    content:
+      - layout: left
+        title: Alliantum GmbH
+        link: https://www.alliantum.com
+        link_text: www.alliantum.com
+        sub_title: Systems Administrator
+        caption: July 2021 - Present
+        quote: >
+          Thanks to my employer I could turn my passion into a full time job.
+        description: | # this will include new lines to allow paragraphs
+          Fast, reliable and scalable services, delivered with care and passion.
+      - layout: left
+        title: Alliantum GmbH
+        link: https://www.alliantum.com
+        link_text: www.alliantum.com
+        sub_title: Software Developer
+        caption: December 2020 - June 2021
+        quote: >
+          Thrilled to join the small but talented group of developers in charge of the Odoo services.
+        description: | # this will include new lines to allow paragraphs
+          We analyse the needs of your company and together we develop requirements and goals. You will receive a customised, fully functional ERP system.
+
   - title: Projects # Title for the section
     layout: list # Type of content section (list/text)
     content:
@@ -109,30 +133,6 @@ content:
           Organize files in a windows-like folder structure
         description: | # this will include new lines to allow paragraphs
           Move all the files that match set extensions to a windows-like folder structure.
-
-  - title: Experience # Title for the section
-    layout: list # Type of content section (list/text)
-    content:
-      - layout: left
-        title: Alliantum GmbH
-        link: https://www.alliantum.com
-        link_text: www.alliantum.com
-        sub_title: Systems Administrator
-        caption: July 2021 - Present
-        quote: >
-          Thanks to my employer I could turn my passion into a full time job.
-        description: | # this will include new lines to allow paragraphs
-          Fast, reliable and scalable services, delivered with care and passion.
-      - layout: left
-        title: Alliantum GmbH
-        link: https://www.alliantum.com
-        link_text: www.alliantum.com
-        sub_title: Software Developer
-        caption: December 2020 - June 2021
-        quote: >
-          Thrilled to join the small but talented group of developers in charge of the Odoo services.
-        description: | # this will include new lines to allow paragraphs
-          We analyse the needs of your company and together we develop requirements and goals. You will receive a customised, fully functional ERP system.
 
   # - title: Education # Title for the section
   #   layout: list # Type of content section (list/text)
