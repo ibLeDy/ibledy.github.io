@@ -7,7 +7,7 @@ version: 2
 
 # Personal info
 name: Iago Alonso
-title: Systems Administrator and Software Developer
+title: System Administrator and Software Developer
 email: deejaynof@gmail.com
 # phone: Your phone number (optional)
 # website: iagoalonso.xyz
@@ -47,10 +47,6 @@ additional_links:
     icon: fab fa-free-code-camp
     url: https://www.freecodecamp.org/bledy
 
-  - title: Alliantum
-    icon: fas fa-globe
-    url: https://www.alliantum.com
-
 # Google Analytics and Tag Manager
 # Using more than one of these may cause issues with reporting
 # gtm: "GTM-0000000"
@@ -73,24 +69,25 @@ content:
     content:
       - layout: left
         title: Alliantum GmbH
-        link: https://www.alliantum.com
-        link_text: www.alliantum.com
-        sub_title: Systems Administrator
-        caption: July 2021 - Present
+        sub_title: System Administrator
+        caption: June 2021 - June 2022
         quote: >
-          Thanks to my employer I could turn my passion into a full time job.
+          With a Developer Experience role, established guidelines and standards, improving maintainability and efficiency by implementing CI/CD pipelines, automating repetitive tasks, and building custom tools.
         description: | # this will include new lines to allow paragraphs
-          Fast, reliable and scalable services, delivered with care and passion.
+          - Built an automated per-branch Odoo instance manager, with client and server side tooling. The developers could connect  their local instance to a clone of the production database and file system, located in the on-premise infrastructure of a client through our VPN, and later to their recently migrated infrastructure in GCP.
+          - Built in-house pipelines, tooling and scripts to improve the developer efficacy, reduce errors, improve maintainability, and increase the frequency of production updates while decreasing the number of incidents.
+          - Responsible for the on-premise infrastructure of our biggest client, which we then migrated to Google Cloud Platform, as well as all of the company's services to Google Workspace.
+          - Responsible for the infrastructure of multiple smaller clients, located in a cloud provider (Hetzner).
+          - Responsible for the security of the infrastructure, as well as backups and rollbacks.
       - layout: left
         title: Alliantum GmbH
-        link: https://www.alliantum.com
-        link_text: www.alliantum.com
         sub_title: Software Developer
         caption: December 2020 - June 2021
         quote: >
-          Thrilled to join the small but talented group of developers in charge of the Odoo services.
+          Maintained custom Odoo (former OpenERP) installations, and developed tailor-made addons for the client.
         description: | # this will include new lines to allow paragraphs
-          We analyse the needs of your company and together we develop requirements and goals. You will receive a customised, fully functional ERP system.
+          - Migrated from old releases to the latest one available (enterprise and community).
+          - Frequent production updates, maintenance tasks, and hotfixes.
 
   - title: Projects # Title for the section
     layout: list # Type of content section (list/text)
@@ -149,18 +146,21 @@ content:
   - title: Skills
     layout: text
     content: | # this will include new lines to allow paragraphs
-      - Python
-      - JS (basic)
-      - SQL & NoSQL
-      - HTML and CSS
-      - Linux, Windows and MacOS
-      - Git, GitHub and GitLab
+      - Python, Bash, Rust, JS, HTML, CSS, SQL
+      - Django, Flask, FastAPI, Jinja
+      - Ansible, Terraform
+      - Docker, Kubernetes
+      - PostgreSQL, MySQL, MongoDB, Redis
+      - Linux, Windows, MacOS
+      - Proxmox
+      - BorgBackup
+      - SSH, GPG
+      - Git, Github, Gitlab
       - CI/CD pipelines
-      - Docker
 
 # Footer
 footer_show_references: false
-# references_title: References on request (Override references text)
+references_title: References on request
 
 # Build settings
 remote_theme: sproogen/resume-theme
