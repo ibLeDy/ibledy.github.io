@@ -159,7 +159,7 @@ content:
       - CI/CD pipelines
 
 # Footer
-footer_show_references: false
+footer_show_references: true
 references_title: References on request
 
 # Build settings
