@@ -68,6 +68,19 @@ content:
     layout: list # Type of content section (list/text)
     content:
       - layout: left
+        title: Marfeel
+        sub_title: SysOps
+        caption: August 2022 - Present
+        description: | # this will include new lines to allow paragraphs
+          Main technologies/tools I use daily:
+            - Kubernetes
+            - Ansible
+            - Docker
+            - Helm
+            - ArgoCD
+            - Prometheus
+            - Grafana
+      - layout: left
         title: Alliantum GmbH
         sub_title: System Administrator
         caption: June 2021 - June 2022
