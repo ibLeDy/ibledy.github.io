@@ -116,10 +116,10 @@ content:
         layout: left
         link: https://github.com/ibLeDy/timezone-converter
         link_text: View source
-        additional_links:
-          - title: View on PyPI
-            icon: fab fa-python
-            url: https://pypi.org/project/timezone-converter/
+        # additional_links:
+        #   - title: View on PyPI
+        #     icon: fab fa-python
+        #     url: https://pypi.org/project/timezone-converter/
         quote: >
           Compare entire days across multiple time zones
         description: | # this will include new lines to allow paragraphs
