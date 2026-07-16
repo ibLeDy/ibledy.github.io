@@ -1,6 +1,9 @@
-*.gem
-.bundle
-.sass-cache
-_site
-Gemfile.lock
+.astro/
+.bundle/
+.sass-cache/
+_site/
+dist/
+node_modules/
+public/og-card.png
 *.code-workspace
+*.gem

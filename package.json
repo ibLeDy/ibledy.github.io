@@ -1,0 +1,33 @@
+{
+  "name": "iagoalonso-site",
+  "private": true,
+  "type": "module",
+  "version": "1.0.0",
+  "scripts": {
+    "assets": "node scripts/generate-og.mjs",
+    "predev": "npm run assets",
+    "dev": "ASTRO_TELEMETRY_DISABLED=1 astro dev",
+    "prebuild": "npm run assets",
+    "build": "ASTRO_TELEMETRY_DISABLED=1 astro check && ASTRO_TELEMETRY_DISABLED=1 astro build && node scripts/check-build.mjs",
+    "preview": "ASTRO_TELEMETRY_DISABLED=1 astro preview",
+    "check": "ASTRO_TELEMETRY_DISABLED=1 astro check",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "test": "npm run format:check && npm run build"
+  },
+  "devDependencies": {
+    "@astrojs/check": "0.9.9",
+    "astro": "7.0.9",
+    "prettier": "3.9.5",
+    "prettier-plugin-astro": "0.14.1",
+    "sharp": "0.35.3",
+    "typescript": "6.0.3"
+  },
+  "engines": {
+    "node": ">=22.12.0",
+    "npm": ">=9.6.5"
+  },
+  "allowScripts": {
+    "esbuild@0.28.1": true
+  }
+}

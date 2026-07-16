@@ -24,3 +24,15 @@ repos:
     rev: v1.10.0
     hooks:
       - id: text-unicode-replacement-char
+  - repo: local
+    hooks:
+      - id: prettier
+        name: check Astro formatting
+        entry: npm run format:check
+        language: system
+        pass_filenames: false
+      - id: astro-check
+        name: check Astro and TypeScript
+        entry: npm run check
+        language: system
+        pass_filenames: false

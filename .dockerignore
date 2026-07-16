@@ -1,0 +1,7 @@
+.git
+.astro
+dist
+docs
+node_modules
+npm-debug.log*
+_site
