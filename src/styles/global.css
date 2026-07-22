@@ -582,22 +582,32 @@ a:focus-visible {
 
 @media print {
   :root {
+    --canvas: #fff;
+    --surface: #fff;
+    --surface-raised: #fff;
+    --paper: #111;
+    --ink-muted: #333;
+    --ink-faint: #444;
+    --accent: #405d00;
+    --line: #bbb;
+    --line-strong: #888;
     color: #111;
     background: #fff;
   }
 
   @page {
-    margin: 14mm;
+    margin: 10mm 12mm;
     size: A4;
   }
 
   body {
     color: #111;
     background: #fff;
-    font-size: 9.5pt;
+    font-size: 8.5pt;
   }
 
   body::before,
+  .skip-link,
   .site-header nav,
   .header-contact,
   .hero-actions,
@@ -613,20 +623,20 @@ a:focus-visible {
   }
 
   .site-header {
-    min-height: 12mm;
+    min-height: 8mm;
     border-color: #bbb;
   }
 
   .hero {
-    grid-template-columns: 1fr 35mm;
+    grid-template-columns: 1fr 32mm;
     min-height: 0;
-    gap: 12mm;
-    padding-block: 12mm;
+    gap: 10mm;
+    padding-block: 8mm;
   }
 
   .hero h1 {
     color: #111;
-    font-size: 34pt;
+    font-size: 30pt;
   }
 
   .hero h1 em,
@@ -643,6 +653,11 @@ a:focus-visible {
     color: #333;
   }
 
+  .hero-intro {
+    margin-top: 6mm;
+    font-size: 9.5pt;
+  }
+
   .portrait-card {
     padding: 2px;
     border-color: #aaa;
@@ -655,7 +670,7 @@ a:focus-visible {
   }
 
   .section {
-    padding-block: 12mm;
+    padding-block: 7mm;
   }
 
   .about,
@@ -669,7 +684,32 @@ a:focus-visible {
   .about-copy h2,
   .contact-main h2 {
     color: #111;
-    font-size: 23pt;
+    font-size: 19pt;
+  }
+
+  .about-paragraphs {
+    gap: 7mm;
+    margin-top: 7mm;
+  }
+
+  .about-paragraphs p {
+    font-size: 8.5pt;
+    line-height: 1.5;
+  }
+
+  .section-intro {
+    margin-bottom: 6mm;
+  }
+
+  .section-intro h2 {
+    font-size: 22pt;
+  }
+
+  .section-intro div > p {
+    margin-top: 4mm;
+    color: #333;
+    font-size: 8.5pt;
+    line-height: 1.5;
   }
 
   .project-grid {
@@ -679,34 +719,103 @@ a:focus-visible {
   .project-card {
     min-height: 0;
     break-inside: avoid;
+    padding: 6mm;
     border-color: #aaa;
     color: #111;
     background: #fff;
   }
 
+  .project-card .project-topline {
+    min-height: 0;
+    color: #444;
+  }
+
+  .project-card .project-main {
+    gap: 6mm;
+    padding: 8mm 0 6mm;
+  }
+
+  .project-card h3 {
+    color: #111;
+    font-size: 20pt;
+  }
+
+  .project-card .description {
+    color: #333;
+    font-size: 8pt;
+    line-height: 1.45;
+  }
+
+  .project-card a {
+    color: #111;
+  }
+
+  .experience-item {
+    break-inside: avoid;
+    padding: 5mm 0;
+  }
+
+  .experience-item h3 {
+    color: #111;
+    font-size: 16pt;
+  }
+
+  .experience-item .company,
+  .experience-item .summary,
+  .experience-item li {
+    color: #222;
+  }
+
+  .experience-item .summary,
+  .experience-item li {
+    font-size: 8pt;
+    line-height: 1.45;
+  }
+
+  .experience-item ul {
+    gap: 2mm;
+    margin-top: 4mm;
+  }
+
   .skills-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     border-color: #aaa;
   }
 
   .skill-group {
     min-height: 0;
     break-inside: avoid;
+    padding: 5mm;
     border-color: #aaa;
     color: #111;
     background: #fff;
   }
 
+  .skill-group h3 {
+    margin: 7mm 0 4mm;
+    font-size: 11pt;
+  }
+
   .skill-group li {
+    padding: 1.5mm 2mm;
     border-color: #bbb;
     color: #333;
+    font-size: 7pt;
   }
 
   .contact {
-    page-break-before: always;
+    break-inside: avoid;
+    padding-block: 8mm;
+  }
+
+  .contact-email {
+    margin-top: 6mm;
+    padding-block: 4mm;
+    font-size: 12pt;
   }
 
   .site-footer {
-    min-height: 12mm;
+    min-height: 10mm;
     border-color: #bbb;
     color: #444;
   }

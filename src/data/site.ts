@@ -1,3 +1,5 @@
+// Types and site implementation are MIT-licensed. The personal CV text and
+// identifying data below remain reserved; see CONTENT-LICENSE.md.
 export type Link = {
   label: string;
   href: string;

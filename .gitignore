@@ -1,4 +1,5 @@
 .astro/
+.env
 .bundle/
 .sass-cache/
 _site/

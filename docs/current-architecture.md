@@ -1,6 +1,6 @@
 # Current architecture
 
-Last verified from the working tree on 2026-07-16.
+Last verified from the working tree on 2026-07-23.
 
 ## Product
 
@@ -85,3 +85,10 @@ See `docs/deployment.md` for cutover, cache, origin, and rollback guidance.
 The repository does not change DNS, Cloudflare, GitHub Pages settings, or a VPS.
 Those remain external deployment state and must be verified during production
 cutover.
+
+## Licensing boundary
+
+Original site code is MIT-licensed. Personal CV text and identifying data,
+portrait assets, and personal branding remain copyright Iago Alonso, all rights
+reserved. `CONTENT-LICENSE.md` defines this boundary; third-party dependencies
+retain their own license terms.

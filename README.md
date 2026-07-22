@@ -53,3 +53,11 @@ email, portrait, work history, and profile links. It has no visitor-side
 analytics, remote fonts, contact form, exact location, phone number, or embedded
 third-party content. The build checks guard against reintroducing common tracking
 origins and structured address fields.
+
+## Licensing
+
+The original source code for this Astro site is available under the
+[MIT License](LICENSE). Personal CV text and data, the portrait, and personal
+branding are not included in that software license and remain copyright Iago
+Alonso, all rights reserved. See [CONTENT-LICENSE.md](CONTENT-LICENSE.md) for the
+exact boundary. Third-party dependencies remain subject to their own licenses.
