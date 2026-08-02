@@ -46,7 +46,7 @@ linkedin_username: iago-alonso
 
 # About Section
 about_title: About
-about_profile_image: images/profile.jpg
+about_profile_image: images/profile.jpeg
 about_content: | # this will include new lines to allow paragraphs
   I'm a systems and platform engineer with a background in software development and experience operating large-scale production infrastructure.
 
