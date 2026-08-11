@@ -1,0 +1,52 @@
+---
+import Icon from "../components/Icon.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="Page not found — Iago Alonso" description="The requested page could not be found.">
+  <main class="not-found">
+    <p>404 / ROUTE NOT FOUND</p>
+    <h1>This path leads nowhere.</h1>
+    <a href="/">
+      <span>Return home</span>
+      <Icon name="arrow" />
+    </a>
+  </main>
+</BaseLayout>
+
+<style>
+  .not-found {
+    display: flex;
+    width: min(100% - 2.5rem, 72rem);
+    min-height: 100svh;
+    margin-inline: auto;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  p {
+    margin: 0 0 2rem;
+    color: var(--accent);
+    font: 650 0.72rem/1 var(--font-mono);
+    letter-spacing: 0.1em;
+  }
+
+  h1 {
+    max-width: 9ch;
+    margin: 0;
+    font-size: clamp(4rem, 12vw, 9rem);
+    font-weight: 600;
+    letter-spacing: -0.08em;
+    line-height: 0.84;
+  }
+
+  a {
+    display: inline-flex;
+    width: max-content;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 3rem;
+    color: var(--ink-muted);
+    text-decoration: none;
+  }
+</style>

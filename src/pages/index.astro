@@ -1,0 +1,149 @@
+---
+import { Picture } from "astro:assets";
+import ExperienceItem from "../components/ExperienceItem.astro";
+import Icon from "../components/Icon.astro";
+import ProjectCard from "../components/ProjectCard.astro";
+import SectionIntro from "../components/SectionIntro.astro";
+import { experience, projects, site, skillGroups } from "../data/site";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import portrait from "../assets/profile.jpeg";
+---
+
+<BaseLayout>
+  <header class="site-header page-shell">
+    <a class="monogram" href="#top" aria-label={`${site.name}, back to top`}>
+      <span>IA</span>
+      <span class="monogram-dot" aria-hidden="true"></span>
+    </a>
+    <nav aria-label="Main navigation">
+      <a href="#work">Work</a>
+      <a href="#experience">Experience</a>
+      <a href="#toolkit">Toolkit</a>
+    </nav>
+    <a class="header-contact" href={`mailto:${site.email}`}>Let’s talk</a>
+  </header>
+
+  <main id="main-content">
+    <section class="hero page-shell" id="top" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span aria-hidden="true"></span>{site.title}</p>
+        <h1 id="hero-title">
+          I make production systems <em>calmer.</em>
+        </h1>
+        <p class="hero-intro">{site.intro}</p>
+        <div class="hero-actions">
+          <a class="primary-action" href="#work">
+            <span>Explore my work</span>
+            <Icon name="arrow" />
+          </a>
+          <a class="text-action" href={`mailto:${site.email}`}>{site.email}</a>
+        </div>
+      </div>
+
+      <aside class="portrait-card" aria-label={`Portrait of ${site.name}`}>
+        <div class="portrait-frame">
+          <Picture
+            src={portrait}
+            alt={`Portrait of ${site.name}`}
+            widths={[320, 480, 640]}
+            sizes="(max-width: 760px) 70vw, 360px"
+            formats={["avif", "webp"]}
+            loading="eager"
+            fetchpriority="high"
+          />
+        </div>
+        <div class="portrait-caption">
+          <span>Iago Alonso</span>
+          <span aria-hidden="true">SYS / PLT</span>
+        </div>
+      </aside>
+    </section>
+
+    <div class="principles" aria-label="Engineering principles">
+      <div class="principles-track page-shell">
+        {site.principles.map((principle, index) => (
+          <span><b>{String(index + 1).padStart(2, "0")}</b>{principle}</span>
+        ))}
+      </div>
+    </div>
+
+    <section class="about section page-shell" aria-labelledby="about-title">
+      <div class="about-label">
+        <p>Working philosophy</p>
+      </div>
+      <div class="about-copy">
+        <h2 id="about-title">Software thinking, applied to infrastructure.</h2>
+        <div class="about-paragraphs">
+          {site.about.map((paragraph) => <p>{paragraph}</p>)}
+        </div>
+      </div>
+    </section>
+
+    <section class="section page-shell" id="work" aria-labelledby="work-title">
+      <SectionIntro
+        index="01 / SELECTED WORK"
+        title="Useful things, built to last."
+        copy="A pair of focused tools shaped by the same concerns as my infrastructure work: reliable data, understandable behavior, and low operational friction."
+      />
+      <div class="project-grid">
+        {projects.map((project) => <ProjectCard project={project} />)}
+      </div>
+    </section>
+
+    <section class="section page-shell" id="experience" aria-labelledby="experience-title">
+      <SectionIntro
+        index="02 / EXPERIENCE"
+        title="From code to production."
+        copy="A software development foundation followed by increasingly broad responsibility for delivery systems, infrastructure, reliability, and operations."
+      />
+      <div class="experience-list">
+        {experience.map((item) => <ExperienceItem item={item} />)}
+      </div>
+    </section>
+
+    <section class="section page-shell" id="toolkit" aria-labelledby="toolkit-title">
+      <SectionIntro
+        index="03 / TOOLKIT"
+        title="Tools follow the system."
+        copy="Technology is most useful when it reduces uncertainty. These are the systems, platforms, and practices I work with regularly."
+      />
+      <div class="skills-grid">
+        {skillGroups.map((group, index) => (
+          <article class="skill-group">
+            <p class="skill-number">{String(index + 1).padStart(2, "0")}</p>
+            <h3>{group.label}</h3>
+            <ul>
+              {group.skills.map((skill) => <li>{skill}</li>)}
+            </ul>
+          </article>
+        ))}
+      </div>
+    </section>
+
+    <section class="contact section page-shell" aria-labelledby="contact-title">
+      <p class="contact-label">04 / CONTACT</p>
+      <div class="contact-main">
+        <h2 id="contact-title">Let’s build systems that age well.</h2>
+        <a class="contact-email" href={`mailto:${site.email}`}>
+          <span>{site.email}</span>
+          <Icon name="arrow" size={32} />
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer page-shell">
+    <p>© {new Date().getFullYear()} {site.name}</p>
+    <div class="footer-links">
+      {
+        site.profiles.map((profile) => (
+          <a href={profile.href} target="_blank" rel="noreferrer">
+            <Icon name={profile.icon} />
+            <span>{profile.label}</span>
+          </a>
+        ))
+      }
+    </div>
+    <a href="#top">Back to top ↑</a>
+  </footer>
+</BaseLayout>
