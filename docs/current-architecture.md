@@ -1,6 +1,6 @@
 # Current architecture
 
-Last verified from the working tree on 2026-07-23.
+Last verified from the working tree on 2026-08-11.
 
 ## Product
 
@@ -41,10 +41,14 @@ Open Graph and Twitter metadata, a typographic social image, and Person JSON-LD.
 Structured data contains only the public name, professional role, professional
 email, site URL, profile links, and work topics; it contains no address object.
 
-`src/assets/profile.jpg` is retained as a build source. Astro re-encodes it into
+`src/assets/profile.jpeg` is retained as a build source. Astro re-encodes it into
 responsive AVIF, WebP, and JPEG variants and publishes only those generated
 files. The source file is not copied to the public output. The social card is
 generated locally as PNG and does not contain the portrait.
+
+The source asset is the illustrated avatar currently published by the legacy
+site. Its hidden metadata is stripped before it is committed to the Astro
+source tree.
 
 The site loads no analytics beacon, remote font, third-party script, iframe, or
 embedded third-party media. Cloudflare and the self-hosted origin can still
@@ -82,9 +86,12 @@ Compose binds the service to `127.0.0.1:8080` by default. The intended public
 path is Cloudflare followed by a TLS host reverse proxy or Cloudflare Tunnel.
 See `docs/deployment.md` for cutover, cache, origin, and rollback guidance.
 
-The repository does not change DNS, Cloudflare, GitHub Pages settings, or a VPS.
-Those remain external deployment state and must be verified during production
-cutover.
+This working tree is still attached to the migration branch in
+`ibLeDy/ibledy.github.io`. The intended destination is a dedicated public
+`ibLeDy/iagoalonso.xyz` repository using `main`; that repository does not exist
+until it is created explicitly. Repository creation, DNS, Cloudflare, GitHub
+Pages settings, and VPS state remain external and must be verified during
+migration and production cutover.
 
 ## Licensing boundary
 

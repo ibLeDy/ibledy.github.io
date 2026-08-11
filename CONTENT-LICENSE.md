@@ -9,7 +9,7 @@ this notice:
 
 - CV prose, employment history, biography, and other personal data values,
   including the values stored in `src/data/site.ts`;
-- `src/assets/profile.jpg` and its generated variants;
+- `src/assets/profile.jpeg` and its generated variants;
 - Iago Alonso's name, likeness, personal branding, and social-preview artwork.
 
 Third-party packages and other separately identified materials remain governed

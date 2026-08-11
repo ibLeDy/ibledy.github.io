@@ -29,7 +29,7 @@ npm test              # all repository-level application checks
 - `src/pages/` — static routes.
 - `src/components/` — reusable presentation components.
 - `src/styles/global.css` — design system, responsive layout, and print styles.
-- `src/assets/profile.jpg` — source portrait; transformed variants are the only
+- `src/assets/profile.jpeg` — source avatar; transformed variants are the only
   copies published by the build.
 - `scripts/` — deterministic social-card generation and production-output
   checks.
@@ -43,8 +43,10 @@ docker compose up --build
 ```
 
 The container binds to `127.0.0.1:8080` by default and is intended to sit behind
-a host reverse proxy or Cloudflare Tunnel. See [deployment](docs/deployment.md)
-before changing DNS or the current GitHub Pages publishing source.
+a host reverse proxy or Cloudflare Tunnel. The planned source repository is the
+public `ibLeDy/iagoalonso.xyz` repository with `main` as its default branch. See
+[deployment](docs/deployment.md) before creating the repository or changing DNS
+or the current GitHub Pages configuration.
 
 ## Privacy
 

@@ -580,6 +580,11 @@ a:focus-visible {
   }
 }
 
+@page {
+  margin: 10mm 0;
+  size: A4;
+}
+
 @media print {
   :root {
     --canvas: #fff;
@@ -595,12 +600,8 @@ a:focus-visible {
     background: #fff;
   }
 
-  @page {
-    margin: 10mm 12mm;
-    size: A4;
-  }
-
   body {
+    padding-inline: 12mm;
     color: #111;
     background: #fff;
     font-size: 8.5pt;

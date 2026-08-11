@@ -1,14 +1,16 @@
-# Astro rebuild plan
-
 Status: In progress
+
+# Astro rebuild plan
 
 ## Task and intended files
 
 Replace the Sproogen/Jekyll site with an original Astro implementation while
 keeping the existing public site recoverable until a VPS preview and Cloudflare
-cutover have been verified. Implementation is concentrated in `src/`, `public/`,
-`scripts/`, the Node package files, container configuration, and the supporting
-documentation under `docs/`.
+cutover have been verified. Extract the finished site into a dedicated source
+repository so `ibLeDy/ibledy.github.io` remains available for a different use.
+Implementation is concentrated in `src/`, `public/`, `scripts/`, the Node
+package files, container configuration, and the supporting documentation under
+`docs/`.
 
 ## Goals
 
@@ -19,6 +21,8 @@ documentation under `docs/`.
   part of the implementation rather than later additions.
 - Support self-hosting on a VPS behind Cloudflare without requiring an
   application runtime in production.
+- Decouple the personal-domain source from the special GitHub user-site
+  repository and its `gh-pages` history.
 
 ## Non-goals
 
@@ -39,6 +43,29 @@ documentation under `docs/`.
   content, the portrait, likeness, and branding remain all rights reserved.
 - The production runtime changes from GitHub Pages to a static, unprivileged
   nginx container behind Cloudflare.
+
+## Repository extraction decision
+
+The earlier implementation targeted `gh-pages` because that was the existing
+repository trunk. That target is superseded: the Astro site should move to a
+dedicated `ibLeDy/iagoalonso.xyz` repository with `main` as its default branch.
+The existing draft PR remains a staging and review surface and must not be
+merged into `ibLeDy/ibledy.github.io`.
+
+The dedicated repository should be public. The website and its source are
+already public, the original code is MIT-licensed, and public CI, dependency
+updates, and source visibility are useful portfolio signals. Personal CV data,
+the avatar, likeness, and branding remain reserved by `CONTENT-LICENSE.md`.
+The repository must contain no server credentials, Cloudflare tokens, private
+operations data, or environment files. A private repository would be reasonable
+only if hiding the implementation or unpublished history became an explicit
+goal.
+
+Initialize the destination with a minimal `main`, then import the validated
+Astro tree on a feature branch and open a new draft PR. Use a clean repository
+history rather than carrying the legacy Jekyll/Sproogen history into the new
+project. Keep this branch and PR until the destination PR and preview are
+verified, then close the old PR as superseded rather than merging it.
 
 ## Design direction
 
@@ -86,12 +113,30 @@ Completed on 2026-07-23:
   no overflow or console errors, then rendered and visually inspected a clean
   four-page A4 PDF from the same container.
 
-Remaining before the PR is ready:
+Completed on 2026-08-11:
 
+- Merged the latest production branch state into the Astro worktree and resolved
+  the legacy Jekyll deletion and portrait rename in favor of the production
+  illustrated avatar.
+- Stripped hidden metadata from the avatar source before committing it under
+  `src/assets/`; Astro continues to publish only generated variants.
+- Decided to extract the site into a dedicated repository instead of merging it
+  into `ibLeDy/ibledy.github.io`.
+- Applied patch-level fixes for the current transitive dependency advisories;
+  `npm audit` again reports zero vulnerabilities.
+- Revalidated desktop and mobile layouts with the production avatar and fixed a
+  headless-print margin incompatibility; the resulting four-page A4 CV has no
+  clipping or overlap.
+
+Remaining before the destination PR is ready:
+
+- Create the dedicated public repository and import the validated Astro tree on
+  a feature branch with a new draft PR.
 - Deploy the final validated feature head to a VPS preview hostname.
 - Validate the public preview, including TLS, headers, caching, redirects,
   health checks, and privacy invariants.
-- Coordinate the GitHub Pages source change and Cloudflare origin cutover.
+- Coordinate the Cloudflare origin cutover while retaining the old GitHub Pages
+  site as rollback.
 
 ## Deployment and rollback
 
@@ -102,17 +147,26 @@ when using a public origin.
 
 > [!CAUTION]
 > 🔴 **DANGER** — `gh-pages` is currently both the default branch and the live
-> legacy GitHub Pages source. Do not merge the Astro PR until Pages publishes
-> from `legacy-pages` and that rollback site has been verified.
+> legacy GitHub Pages source. Do not merge the Astro PR into this repository;
+> leave the existing Pages site unchanged as the rollback target while the
+> dedicated repository and VPS origin are validated.
 
-After preview approval, move the GitHub Pages publishing source to
-`legacy-pages`, verify the existing site, then point Cloudflare at the VPS. Merge
-the Astro PR into `gh-pages` only after production traffic reaches the new
-origin. Rollback consists of returning Cloudflare to GitHub Pages or restarting
-the previous VPS image; no data migration is involved because both sites are
-static.
+Do not move the old Pages publishing source or merge the Astro PR into
+`gh-pages`. Create and review the site in the dedicated repository, deploy its
+exact validated commit to the VPS, and leave the current GitHub Pages site
+unchanged until Cloudflare is pointed at the new origin. Rollback consists of
+returning DNS to the unchanged GitHub Pages site or restarting the previous VPS
+image; no data migration is involved because both sites are static.
+
+After an observation window, detach `iagoalonso.xyz` from the old GitHub Pages
+configuration. Only then is `ibLeDy/ibledy.github.io` free to publish unrelated
+content without risking the CV site's rollback path.
 
 ## ⚠️ Attention and behavior changes
+
+> [!CAUTION]
+> 🛑 **BLOCKER** — Repository publication is blocked until the recommended
+> public `ibLeDy/iagoalonso.xyz` destination is confirmed and created.
 
 > [!CAUTION]
 > 🛑 **BLOCKER** — Production cutover remains blocked until an exact VPS target,
@@ -121,7 +175,8 @@ static.
 
 > [!IMPORTANT]
 > 🔵 **BEHAVIOR CHANGE** — Hosting moves from legacy GitHub Pages to a static
-> nginx container, while `gh-pages` remains the repository's default branch.
+> nginx container. Source moves to a dedicated repository using `main`, while
+> the old `ibledy.github.io` site remains the rollback target during observation.
 
 > [!IMPORTANT]
 > 🟣 **VISUAL QA** — Desktop, mobile, and four-page A4 print output passed on the

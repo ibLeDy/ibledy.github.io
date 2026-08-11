@@ -48,7 +48,7 @@ container; no Node.js application runtime is present after the build.
 - `src/components/` contains reusable presentational components.
 - `src/styles/global.css` contains the visual system, responsive breakpoints,
   reduced-motion behavior, and print styles.
-- `src/assets/profile.jpg` is a source-only portrait. Astro publishes re-encoded
+- `src/assets/profile.jpeg` is a source-only portrait. Astro publishes re-encoded
   variants and does not copy the original file to `dist/`.
 - `scripts/generate-og.mjs` generates the social preview card;
   `scripts/check-build.mjs` verifies required production output and privacy
@@ -58,9 +58,10 @@ container; no Node.js application runtime is present after the build.
 - `dist/`, `.astro/`, `node_modules/`, and `public/og-card.png` are generated and
   git-ignored; never edit or commit them.
 
-The checked-out branch may still be named `gh-pages`, but that name is legacy
-deployment history rather than an architectural requirement. DNS, Cloudflare,
-the VPS, and GitHub Pages settings remain external state.
+This worktree may still belong to the legacy `ibledy.github.io` migration PR.
+The site is intended to use `main` in its dedicated repository; do not treat
+`gh-pages` as the site's future trunk. DNS, Cloudflare, the VPS, repository
+creation, and GitHub Pages settings remain external state.
 
 ## Local commands
 
